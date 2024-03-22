@@ -1,0 +1,27 @@
+//index
+.carrusel{
+    div{
+        img{
+            height: 100px;
+        }
+    }
+}
+
+.container{
+    margin-top: 30px;
+    div{
+        h1{
+            color:white;
+            font-size: 2rem;
+        }
+        p{
+            color: white;
+            font-size: 0.5rem;
+        
+        }
+    }
+    img{
+        grid-area: none;
+    }
+    
+}
