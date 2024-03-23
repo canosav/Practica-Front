@@ -9,19 +9,23 @@ header{
     background-color: #19144a;
 }
 .indice{
-    li{
-        a{
-            font-size: 1.3rem;
-            color: white;
-            margin: 10px;
-            &:hover{
-                text-decoration: underline;
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            a{
+                font-size: 1.3rem;
                 color: white;
-                font-size: 1.4rem;
-                padding: 5px;
+                margin: 10px;
+                &:hover{
+                    text-decoration: underline;
+                    color: white;
+                    font-size: 1.4rem;
+                    padding: 5px;
+                }
             }
+    
         }
-
     }
 }
 

@@ -1,0 +1,22 @@
+@media only screen and (max-width:480px){
+    //index
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        ;
+        grid-template-columns: 90%;
+        /*hijos*/
+        justify-items: center;
+        align-items: center;
+        /*grid*/
+        justify-content: center ;
+        .bibliografia{
+            grid-area: texto;
+        }
+        .autora{
+            display:none;
+        }
+    }
+
+}

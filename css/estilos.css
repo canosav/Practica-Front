@@ -18,12 +18,16 @@ header img {
   width: 40px;
 }
 
-.indice li a {
+.indice ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.indice ul li a {
   font-size: 1.3rem;
   color: white;
   margin: 10px;
 }
-.indice li a:hover {
+.indice ul li a:hover {
   text-decoration: underline;
   color: white;
   font-size: 1.4rem;
@@ -37,10 +41,6 @@ footer {
 footer img {
   width: 50px;
   padding: 5px;
-}
-
-.carrusel div img {
-  height: 520px;
 }
 
 .container {
