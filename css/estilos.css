@@ -54,23 +54,4 @@ footer img {
   color: white;
 }
 
-.carrusel div img {
-  height: 100px;
-}
-
-.container {
-  margin-top: 30px;
-}
-.container div h1 {
-  color: white;
-  font-size: 2rem;
-}
-.container div p {
-  color: white;
-  font-size: 0.5rem;
-}
-.container img {
-  grid-area: none;
-}
-
 /*# sourceMappingURL=estilos.css.map */
