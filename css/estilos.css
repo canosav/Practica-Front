@@ -9,10 +9,20 @@ main {
   background-color: rgb(1, 1, 46);
 }
 
+h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+p {
+  color: white;
+  font-size: 1.2rem;
+}
+
 header {
   margin: 0px;
   padding: 5px;
-  background-color: #19144a;
+  background-color: #251e65;
 }
 header img {
   width: 40px;
@@ -36,22 +46,74 @@ header img {
 
 footer {
   text-align: center;
-  background-color: #19144a;
+  background-color: #251e65;
 }
 footer img {
   width: 50px;
   padding: 5px;
 }
 
-.container {
+.grid-container-autora {
   margin-top: 30px;
+  display: grid;
+  grid-template-areas: "texto foto";
+  grid-template-columns: 40% 50%;
+  grid-template-rows: 1000px;
+  /*grid*/
+  justify-content: center;
+  column-gap: 5px;
 }
-.container div h1 {
-  color: white;
-  font-size: 3.5rem;
+.grid-container-autora .grid-texto-autora {
+  grid-area: texto;
 }
-.container div p {
-  color: white;
+.grid-container-autora .grid-foto-autora {
+  grid-area: foto;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .grid-container-autora {
+    display: grid;
+    grid-template-areas: "texto";
+    grid-template-columns: 90%;
+    grid-template-rows: 850px;
+  }
+  .grid-container-autora .grid-texto-autora {
+    grid-area: texto;
+    text-align: justify;
+  }
+  .grid-container-autora .grid-foto-autora {
+    display: none;
+  }
+}
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .grid-container-autora {
+    display: grid;
+    grid-template-areas: "texto";
+    grid-template-columns: 90%;
+    grid-template-rows: 850px;
+  }
+  .grid-container-autora .grid-texto-autora {
+    grid-area: texto;
+    text-align: justify;
+  }
+  .grid-container-autora .grid-foto-autora {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

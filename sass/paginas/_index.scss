@@ -1,14 +1,22 @@
 
-.container{
+.grid-container-autora{
     margin-top: 30px;
-    div{
-        h1{
-            color:white;
-            font-size: 3.5rem;
-        }
-        p{
-            color: white;
-        
-        }
+    display: grid;
+    grid-template-areas: 
+    "texto foto"
+    ;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 1000px;
+    /*grid*/
+    justify-content: center ;
+    column-gap: 5px;
+
+    .grid-texto-autora{
+        grid-area: texto;
+    }
+    .grid-foto-autora{
+        grid-area: foto;
+        width: 100%;
+        height: 100%;
     }
 }

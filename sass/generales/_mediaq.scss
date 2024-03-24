@@ -1,22 +1,55 @@
 @media only screen and (max-width:480px){
+    //generales
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1rem;
+    }
     //index
-    .container{
+    .grid-container-autora{
         display: grid;
         grid-template-areas: 
         "texto"
         ;
         grid-template-columns: 90%;
-        /*hijos*/
-        justify-items: center;
-        align-items: center;
-        /*grid*/
-        justify-content: center ;
-        .bibliografia{
+        grid-template-rows: 850px;
+
+        .grid-texto-autora{
             grid-area: texto;
+            text-align: justify;
         }
-        .autora{
-            display:none;
+        .grid-foto-autora{
+            display: none;
         }
     }
 
+}
+
+/*tablet*/
+@media only screen and (min-width:481px) and (max-width:978px){
+    //generales
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    //index
+    .grid-container-autora{
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        ;
+        grid-template-columns: 90%;
+        grid-template-rows: 850px;
+
+        .grid-texto-autora{
+            grid-area: texto;
+            text-align: justify;
+        }
+        .grid-foto-autora{
+            display: none;
+        }
+    }
 }
